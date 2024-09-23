@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
+  "include": [
+    "src",
+    "src/pages/dashboard/creditControlDashboard/component/companyinformation/model/CcCompanyReadyForActivation.js",
+    "src/pages/dashboard/salesManagerDashboard/component/SearchBars/MyCustomerOrderSearch.js"
+  ]
+}

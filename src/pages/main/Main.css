@@ -1,0 +1,82 @@
+*{
+    /* color: rgba(0, 0, 0, 0.781) !important; */
+}
+.landing-section{
+    height: 85vh;
+}
+
+.custom-table td{
+    background-color: transparent !important;
+  color: inherit !important;
+}
+.hide_overflow_width::-webkit-scrollbar{
+    width: 0;
+}
+.hide_overflow_widthNotImportant::-webkit-scrollbar{
+    width: 0 !important;
+}
+.productCardBGSearch{
+    height: 39rem !important;
+    overflow: hidden;
+    /* margin-top: .8rem; */
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .productCardBGSearch {
+        height: inherit !important;
+        overflow: hidden;
+        margin: .2rem 0 0 0;
+    }
+    .h_credit_card_auto{
+        height: auto !important;
+    }
+    /* .productCardBGSearch{
+        margin-top: .2rem !important;
+    } */
+    .hidesidebarSticky{
+        position: fixed !important;
+        left: none;
+        top: 0 !important;
+    }
+    .hidesidebarStickyOntrade{
+        position: fixed !important;
+        left: none;
+        top: 84px !important;
+    }
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+    .h_credit_card_auto{
+        height: auto !important;
+        width: auto !important;
+    }
+}
+.productCardBGMain{
+    height: 38rem !important;
+    overflow: hidden;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+    .productCardBGMain {
+        height: inherit !important;
+        overflow: hidden;
+        margin: .2rem 0 0 0;
+    }
+    /* .productCardBGSearch{
+        margin-top: .2rem !important;
+    } */
+}
+.timeStampTable{
+    font-size: 10px !important;;
+}
+
+.gridOrderInfoData{
+    background: white !important;
+}
+.gridOrderInfoTitle{
+    background-color: #666 !important;
+    color: white !important;
+}
+
+.tableWidthOrders{
+    max-width: "1584px !important";
+    margin: "0 !important";
+}
