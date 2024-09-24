@@ -7,7 +7,7 @@ const Homepage = lazy(() =>
 const AuthenticationGuard = ({ component }) => {
   const Component = withAuthenticationRequired(component, {
     onRedirecting: () => (
-      <div className="page-layout">
+      <div className="page-layout fs-1">
         loading...
       </div>
     ),

@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Navigate, Route, Routes } from "react-router-dom";
-import TopBarProgress from "react-topbar-progress-indicator";
 
 import Main from "pages/main/Main";
 
@@ -15,14 +14,6 @@ import { Suspense, useEffect } from "react";
 import { CreditControlRoutes } from "./CreditControlRoutes";
 import { setToken } from "redux/slice/shared/tokenSlice";
 
-
-TopBarProgress.config({
-  barColors: {
-    0: "#4c00ed",
-    "1.0": "#4c00ed",
-  },
-  shadowBlur: 5,
-});
 
 export default function Mainroutes() {
   const dispatch = useDispatch();
@@ -47,7 +38,7 @@ export default function Mainroutes() {
 
   return (
     <>
-      <Suspense fallback={<TopBarProgress />}>
+      <Suspense fallback={<></>}>
         <Routes>
           <Route path="/" element={<Main />} />
           {isAuthenticated && (

@@ -2,7 +2,6 @@ import "./App.css";
 import Mainroutes from "pages/routes/Mainroutes";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
 import { ReactQueryDevtools } from "react-query/devtools";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useEffect, useLayoutEffect } from "react";
@@ -35,7 +34,6 @@ function App() {
     <>
       <GlobalPreference />
       <Mainroutes />
-
       <ReactQueryDevtools initialIsOpen={false} />
     </>
   );

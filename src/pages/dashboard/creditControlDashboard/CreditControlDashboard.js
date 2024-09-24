@@ -1,33 +1,27 @@
-import { ProSidebarProvider } from "react-pro-sidebar";
 import { Outlet } from "react-router-dom";
 
 export default function CreditControlDashboard() {
-
-
   return (
     <>
-      
-      <ProSidebarProvider>
+      <div
+        style={{
+          display: "flex",
+          minHeight: "100vh",
+        }}
+        className="element-hide"
+      >
         <div
           style={{
-            display: "flex",
-            minHeight: "100vh",
+            width: "100%",
+            position: "sticky",
+            top: "0",
+            overflowY: "auto",
           }}
-          className="element-hide"
+          className="hide_overflow_width"
         >
-          <div
-            style={{
-              width: "100%",
-              position: "sticky",
-              top: "0",
-              overflowY: "auto",
-            }}
-            className="hide_overflow_width"
-          >
-            <Outlet />
-          </div>
+          <Outlet />
         </div>
-      </ProSidebarProvider>
+      </div>
     </>
   );
 }

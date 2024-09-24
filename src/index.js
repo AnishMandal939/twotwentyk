@@ -2,7 +2,6 @@ import Auth0ProviderWithHistory from "Auth0ProviderWithHistory";
 import "bootstrap/dist/css/bootstrap.css";
 import { ThemeProvider } from "context";
 import React from "react";
-import "react-bootstrap-typeahead/css/Typeahead.css";
 import ReactDOM from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { Provider } from "react-redux";
